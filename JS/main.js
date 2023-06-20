@@ -1,16 +1,19 @@
-const novo_item = document.getElementById('novoItem')
-const lista = document.getElementById('lista')
+const novo_item = document.getElementById('novoItem');
+const lista = document.getElementById('lista');
+const itens = [];
 
 novo_item.addEventListener("submit", (evento) => {
     evento.preventDefault()
 
     const nome = evento.target.elements['nome'].value
     const quantidade = evento.target.elements['quantidade'].value
+
+    nome = " "
+    quantidade = " "
     
     Cria_elemento(nome, quantidade)
 
-    nome = ""
-    quantidade = ""
+   
 })
 
 
@@ -27,6 +30,12 @@ function Cria_elemento(nome,quantidade){
 
     lista.appendChild(NovoItem)
 
-    localStorage.setItem("nome", nome)
-    localStorage.setItem("quantidade", quantidade)
+    const itemAtual = {
+        "nome": nome,
+        "quantidade": quantidade
+    }
+
+    itens.push(itemAtual)
+
+    localStorage.setItem("Item", JSON.stringify(itens))
 }
