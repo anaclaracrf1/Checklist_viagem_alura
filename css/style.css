@@ -2,7 +2,7 @@
     --marrom-claro: #9a8c98;
     --cinza-claro: #8d99ae;
     --cor-de-fundo: #4c4570;
-    --bordas: #22223b;
+    --bordas: rgb(34, 34, 59);
 }
 
 html {
