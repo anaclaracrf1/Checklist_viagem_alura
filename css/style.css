@@ -1,8 +1,8 @@
 :root {
-    --azul-claro: #9469b5;
-    --rosa-escuro: #e3afcf;
+    --marrom-claro: #9a8c98;
+    --cinza-claro: #8d99ae;
     --cor-de-fundo: #4c4570;
-    --verde: #1c4f3e;
+    --bordas: #22223b;
 }
 
 html {
@@ -25,7 +25,7 @@ html {
     padding: 4em 2em 2em;
     box-sizing: border-box;
     display: flex;
-    background: var(--rosa-escuro);
+    background: var(--cinza-claro);
     border-radius: 10px;
     gap: 2em;
 }
@@ -35,13 +35,13 @@ html {
     max-width: 170px;
     height: 180px;
     padding-top: 80px;
-    background-color: var(--azul-claro);
-    box-shadow: inset 0 6px 0 2px var(--azul-claro), 0 -93px 0 -77px  var(--verde), 0 -93px 0 -72px var(--azul-claro), 0 -93px 0 -68px  var(--verde);
-    background-image: linear-gradient(to right, transparent 5px, transparent 20px, transparent 1px, transparent 25px, transparent 5px, transparent 20px, transparent 20px, transparent 86px, var(--azul-claro) 45px, var(--azul-claro) 230px, transparent 25px, transparent 172px );
+    background-color: var(--marrom-claro);
+    box-shadow: inset 0 6px 0 2px var(--marrom-claro), 0 -93px 0 -77px  var(--bordas), 0 -93px 0 -72px var(--marrom-claro), 0 -93px 0 -68px  var(--bordas);
+    background-image: linear-gradient(to right, transparent 5px, transparent 20px, transparent 1px, transparent 25px, transparent 5px, transparent 20px, transparent 20px, transparent 86px, var(--marrom-claro) 45px, var(--marrom-claro) 230px, transparent 25px, transparent 172px );
     background-position: center 254px;
     background-size: 305px 6px;
     background-repeat: repeat-x; 
-    border: 5px solid var(--verde);
+    border: 5px solid var(--bordas);
     border-radius: 85px 85px 44px 44px;
     display: inline-block;
     vertical-align: top;
@@ -58,12 +58,12 @@ html {
 .mochila:before {
     height: 75px;
     width: 118px;
-    background-image: radial-gradient(circle closest-corner at 13px 29px , var(--azul-claro), var(--azul-claro) 2px, transparent 2px, transparent), radial-gradient(circle closest-corner at 13px 29px ,  var(--verde),  var(--verde) 4px, transparent 4px, transparent), linear-gradient(to bottom, transparent 10px, transparent 15px,  var(--verde) 5px,  var(--verde) 18px, transparent 18px, transparent 100px), linear-gradient(to right, var(--azul-claro) 10px, var(--azul-escuro) 10px, transparent 10px, transparent 16px, var(--azul-claro) 9px, var(--azul-claro) 50px), linear-gradient(to bottom, var(--azul-claro) 8px, var(--azul-claro) 16px,  var(--verde) 8px,  var(--verde) 30px, var(--azul-claro) 20px, var(--azul-claro) 72px, var(--azul-claro) 10px, var(--azul-claro) 57px, var(--azul-claro) 5%);
+    background-image: radial-gradient(circle closest-corner at 13px 29px , var(--marrom-claro), var(--marrom-claro) 2px, transparent 2px, transparent), radial-gradient(circle closest-corner at 13px 29px ,  var(--bordas),  var(--bordas) 4px, transparent 4px, transparent), linear-gradient(to bottom, transparent 10px, transparent 15px,  var(--bordas) 5px,  var(--bordas) 18px, transparent 18px, transparent 100px), linear-gradient(to right, var(--marrom-claro) 10px, var(--azul-escuro) 10px, transparent 10px, transparent 16px, var(--marrom-claro) 9px, var(--marrom-claro) 50px), linear-gradient(to bottom, var(--marrom-claro) 8px, var(--marrom-claro) 16px,  var(--bordas) 8px,  var(--bordas) 30px, var(--marrom-claro) 20px, var(--marrom-claro) 72px, var(--marrom-claro) 10px, var(--marrom-claro) 57px, var(--marrom-claro) 5%);
     margin-left: 22px;
     margin-top: 58px;
-    border: 4px solid  var(--verde);
+    border: 4px solid  var(--bordas);
     border-radius: 11px;
-    box-shadow: 0 4px 0 0 var(--azul-claro), inset 0px 4px 1px 0 var(--azul-claro);
+    box-shadow: 0 4px 0 0 var(--marrom-claro), inset 0px 4px 1px 0 var(--marrom-claro);
     content: '||';
     color: transparent;
     font-family: Comic Sans MS;
@@ -79,7 +79,7 @@ html {
     background: var(--azul-escuro);
     width:26px;
     height:26px;
-    border: 3px solid  var(--verde);
+    border: 3px solid  var(--bordas);
     border-radius: 3px;
     transform: rotate(45deg);
 }
@@ -94,7 +94,7 @@ html {
     margin: 0.5em 0 1em;
     padding: 1em 0.5em;
     border-radius: 10px;
-    border: 2px solid  var(--verde);
+    border: 2px solid  var(--bordas);
 }
 
 .adicionar label {
@@ -102,7 +102,7 @@ html {
 }
 
 .cadastrar {
-    background-color:  var(--verde);
+    background-color:  var(--bordas);
     color: #FFFFFF;
     cursor: pointer;
 }
@@ -133,7 +133,7 @@ html {
     justify-content: center;
     width: 40px;
     height: 40px;
-    Background: var(--azul-claro);
+    Background: var(--marrom-claro);
     font-weight: 400;
 }
 
